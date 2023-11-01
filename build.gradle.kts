@@ -11,8 +11,8 @@ description = "Modern & Advanced Menu-Plugin for Minecraft Servers"
 
 repositories {
     mavenCentral()
-    maven("https://repo.tabooproject.org/repository/releases")
-    maven("https://jitpack.io")
+    maven("http://repo.tabooproject.org/repository/releases")
+    maven("http://jitpack.io")
 }
 
 tasks.jar {
@@ -68,7 +68,7 @@ subprojects {
     publishing {
         repositories {
             maven {
-                url = uri("https://repo.mcage.cn/repository/trplugins/")
+                url = uri("http://repo.mcage.cn/repository/trplugins/")
                 credentials {
                     username = project.findProperty("user").toString()
                     password = project.findProperty("password").toString()
