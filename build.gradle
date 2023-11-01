@@ -3,9 +3,11 @@ val taboolibVersion: String by project
 plugins {
     id("org.gradle.java")
     id("org.gradle.maven-publish")
-    kotlin("jvm") version "1.8.0" apply false
+    id 'org.jetbrains.kotlin.jvm' version '1.9.0'
     id("io.izzel.taboolib") version "1.56" apply false
 }
+
+apply plugin: 'org.jetbrains.kotlin.jvm'
 
 description = "Modern & Advanced Menu-Plugin for Minecraft Servers"
 
