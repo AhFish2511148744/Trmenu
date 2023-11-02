@@ -56,6 +56,11 @@ repositories {
     maven("https://repo.rosewooddev.io/repository/public/")
     maven("https://repo.opencollab.dev/maven-snapshots/")
     maven("https://jitpack.io")
+    maven {
+        name = "oraxenSnapshots"
+        url = uri("https://repo.oraxen.com/snapshots")
+    }
+    dependencies {compileOnly("io.th0rgal:oraxen:1.164.0-SNAPSHOT")}
 }
 
 dependencies {
@@ -78,12 +83,10 @@ dependencies {
     compileOnly("me.clip:placeholderapi:2.10.9") { isTransitive = false }
     compileOnly("ink.ptms:Zaphkiel:1.6.0") { isTransitive = false }
     compileOnly("ca.tweetzy:skulls:2.7.2") { isTransitive = false }
-    compileOnly("net.skinsrestorer:skinsrestorer-api:15.0.0-SNAPSHOT") { isTransitive = false }
-    compileOnly("com.github.Th0rgal:Oraxen:-SNAPSHOT") { isTransitive = false }
+    compileOnly("net.skinsrestorer:skinsrestorer-api:14.2.1") { isTransitive = false }
     compileOnly("org.black_ixx:playerpoints:3.1.1") { isTransitive = false }
     compileOnly("com.github.MilkBowl:VaultAPI:-SNAPSHOT") { isTransitive = false }
     compileOnly("com.github.tritonmc.Triton:core:v3.7.3") { isTransitive = false }
     compileOnly("com.github.tritonmc.Triton:api:v3.7.3") { isTransitive = false }
-
     compileOnly(fileTree("libs"))
 }
